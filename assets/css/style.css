@@ -1,0 +1,63 @@
+body {
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.999) 40%,
+      rgba(0, 0, 0, 0) 90%,
+      rgba(0, 212, 255, 0) 100%
+    ),
+    url("bg.jpg");
+  background-size: cover;
+  font-family: "Netflix Sans";
+}
+
+/* Hint suggestion */
+
+.dropdown-item {
+  background: #c4c4c4;
+  padding: 18px;
+}
+
+#top_title {
+  font-size: 60px;
+  color: white;
+  font-weight: 700;
+}
+.card-hovered {
+  background-color: #333;
+  transition: 0.25s ease-in-out;
+}
+.more {
+  text-decoration: underline;
+}
+
+#topNumber {
+  font-size: 30px;
+  color: white;
+}
+.displayCards {
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+#titleCard {
+  font-size: 60px;
+  color: white;
+  font-weight: 700;
+}
+
+.badge-dragging {
+  opacity: 0.5;
+}
+
+#selected-genres {
+  height: auto;
+  min-height: 50px;
+}
+/* search icon */
+.ms-n5 {
+  margin-left: -40px;
+  color: gray;
+  z-index: 4;
+}

@@ -1,0 +1,223 @@
+    
+@-webkit-keyframes pulsateAnimation {
+    from {
+        background-color: #1a1a1a
+    }
+
+    25% {
+        background-color: #333
+    }
+
+    50% {
+        background-color: #1a1a1a
+    }
+
+    to {
+        background-color: #1a1a1a
+    }
+}
+
+@-moz-keyframes pulsateAnimation {
+    from {
+        background-color: #1a1a1a
+    }
+
+    25% {
+        background-color: #333
+    }
+
+    50% {
+        background-color: #1a1a1a
+    }
+
+    to {
+        background-color: #1a1a1a
+    }
+}
+
+@-o-keyframes pulsateAnimation {
+    from {
+        background-color: #1a1a1a
+    }
+
+    25% {
+        background-color: #333
+    }
+
+    50% {
+        background-color: #1a1a1a
+    }
+
+    to {
+        background-color: #1a1a1a
+    }
+}
+
+@keyframes pulsateAnimation {
+    from {
+        background-color: #1a1a1a
+    }
+
+    25% {
+        background-color: #333
+    }
+
+    50% {
+        background-color: #1a1a1a
+    }
+
+    to {
+        background-color: #1a1a1a
+    }
+}
+
+@-webkit-keyframes pulsateTransparentAnimation {
+    from {
+        background-color: transparent
+    }
+
+    25% {
+        background-color: #333
+    }
+
+    50% {
+        background-color: transparent
+    }
+
+    to {
+        background-color: transparent
+    }
+}
+
+@-moz-keyframes pulsateTransparentAnimation {
+    from {
+        background-color: transparent
+    }
+
+    25% {
+        background-color: #333
+    }
+
+    50% {
+        background-color: transparent
+    }
+
+    to {
+        background-color: transparent
+    }
+}
+
+@-o-keyframes pulsateTransparentAnimation {
+    from {
+        background-color: transparent
+    }
+
+    25% {
+        background-color: #333
+    }
+
+    50% {
+        background-color: transparent
+    }
+
+    to {
+        background-color: transparent
+    }
+}
+
+@keyframes pulsateTransparentAnimation {
+    from {
+        background-color: transparent
+    }
+
+    25% {
+        background-color: #333
+    }
+
+    50% {
+        background-color: transparent
+    }
+
+    to {
+        background-color: transparent
+    }
+}
+
+.pulsate,.pulsate-transparent {
+    -webkit-animation-duration: 3.6s;
+    -moz-animation-duration: 3.6s;
+    -o-animation-duration: 3.6s;
+    animation-duration: 3.6s;
+    -webkit-animation-name: pulsateAnimation;
+    -moz-animation-name: pulsateAnimation;
+    -o-animation-name: pulsateAnimation;
+    animation-name: pulsateAnimation;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    -o-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out
+}
+
+.pulsate-transparent {
+    -webkit-animation-name: pulsateTransparentAnimation;
+    -moz-animation-name: pulsateTransparentAnimation;
+    -o-animation-name: pulsateTransparentAnimation;
+    animation-name: pulsateTransparentAnimation
+}
+
+.no-pulsate {
+    background-color: #333
+}
+
+.pulsateTransition-enter {
+    -webkit-transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    -o-transition-duration: .2s;
+    transition-duration: .2s;
+    -webkit-transition-property: opacity;
+    -o-transition-property: opacity;
+    -moz-transition-property: opacity;
+    transition-property: opacity;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    z-index: 10000;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0
+}
+
+.pulsateTransition-enter.pulsateTransition-enter-active {
+    opacity: 1
+}
+
+.pulsateTransition-leave {
+    -webkit-transition-duration: .5s;
+    -moz-transition-duration: .5s;
+    -o-transition-duration: .5s;
+    transition-duration: .5s;
+    -webkit-transition-property: opacity;
+    -o-transition-property: opacity;
+    -moz-transition-property: opacity;
+    transition-property: opacity;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0
+}
+
+.pulsateTransition-leave.pulsateTransition-leave-active {
+    opacity: 0
+}

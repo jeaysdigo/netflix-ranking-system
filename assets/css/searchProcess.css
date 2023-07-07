@@ -1,0 +1,50 @@
+body {
+  font-family: "Netflix Sans";
+  background-image: url("bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Hint suggestion */
+#suggestion_div {
+  display: "none";
+  z-index: 1;
+  width: 30%;
+  position: absolute;
+  right: 25px;
+  margin-top: 0px;
+}
+
+.dropdown-item {
+  background: #c4c4c4;
+  padding: 18px;
+}
+
+#top_title {
+  font-size: 60px;
+  color: white;
+  font-weight: 700;
+}
+
+.card-hovered {
+  background-color: #333;
+  transition: 0.25s ease-in-out;
+}
+
+.more {
+  text-decoration: underline;
+}
+
+#topNumber {
+  font-size: 60px;
+  position: absolute;
+  right: 0;
+  margin: 25px;
+}
+
+.displayCards {
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
